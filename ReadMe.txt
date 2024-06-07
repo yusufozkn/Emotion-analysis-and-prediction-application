@@ -6,7 +6,6 @@
 -kullanilan ilk dataset: https://github.com/alpcansoydas/Turkish-Emotion-Analysis/tree/main
 -kullanilan ikinci dataset icin: https://github.com/google-research/google-research/tree/master/goemotions/data
 
-
 ## Dağıtım İçin Gerekli Bilgiler
 -Proje dosyalarini github uzerinden indiriniz.
 -Gerekli kutuphanelerin yuklu oldugundan emin olunuz.
