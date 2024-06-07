@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duygu Oyunu</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="side-panel left-panel"></div>
+    <div class="side-panel right-panel"></div>
+
+    <div id="flying-letters-container"></div>
+
+    <div class="container">
+        <button id="home-btn">Ana Sayfa</button>
+        <h1>Duygu Oyunu</h1>
+        
+        <p>Duygu ile eşleşen bir cümle yazın.</p>
+        <p>Rastgele Duygu: <span id="random-emotion">{{ emotion }}</span></p>
+        <form id="game-form" action="/game/predict" method="post">
+            <input type="hidden" id="target_emotion" name="target_emotion" value="{{ emotion }}">
+            <label for="input_text">Cümle Girin:</label><br>
+            <textarea id="input_text" name="input_text" rows="4" cols="50" required></textarea><br>
+            <button type="submit">Gönder</button>
+        </form>
+        <div id="results" class="results-container"></div>
+        <button id="next-btn" style="display: none;">Sonraki</button>
+        
+        <p>Toplam Puan: <span id="total-score">0</span></p>
+    </div>
+
+    <script src="static/game_script.js"></script>
+    <script src="static/flying_words.js"></script> <!-- Uçan duygu isimleri için script dosyası -->
+</body>
+</html>

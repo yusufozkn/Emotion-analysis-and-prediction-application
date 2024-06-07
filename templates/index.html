@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duygu Analizi Uygulaması</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="side-panel left-panel"></div>
+    <div class="side-panel right-panel"></div>
+
+    <div id="flying-letters-container"></div>
+
+    <div class="container">
+        <button id="game-btn">Oyuna Git</button>
+        <h1>Duygu Analizi Uygulaması</h1>
+        
+        <form id="predict-form" action="/predict" method="post">
+            <label for="input_text">Metin Girin:</label><br>
+            <textarea id="input_text" name="input_text" rows="4" cols="50" required></textarea><br>
+            <button type="submit">Tahmin Et</button>
+        </form>
+        <div id="results" class="results-container"></div>
+        
+    </div>
+
+    <script src="static/script.js"></script>
+</body>
+</html>

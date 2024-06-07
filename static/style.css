@@ -1,0 +1,147 @@
+/* static/style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(to right, #1d1920 30%, #444 30%, #444 70%, #1d1920 70%);
+    color: #fff;
+    overflow: hidden;
+}
+
+@keyframes flying-words {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+
+.flying-text {
+    position: absolute;
+    color: #ffffff;
+    font-size: 24px;
+    animation: flying-words 5s linear infinite;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 40px;
+    background-color: #1d1920;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.482);
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+textarea {
+    width: 100%;
+    padding: auto;
+    margin-top: 5px;
+    border: 1px solid #444;
+    border-radius: 4px;
+    background-color: #333;
+    color: #fff;
+    font-size: 18px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #1ca499;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1ca499b2;
+}
+
+.left-panel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 100%;
+    background: #1d1920;
+}
+
+.right-panel {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 100%;
+    background: #1d1920;
+}
+
+.results-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: none; /* Başlangıçta gizli */
+}
+
+.results-container h2 {
+    margin-bottom: 10px;
+}
+
+.results-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.results-container li {
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #444;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Kutucuklara gölge */
+    display: flex;
+    align-items: center;
+}
+
+.emoji-bar {
+    margin-left: 10px;
+    display: flex;
+}
+
+
+#score {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.game-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #1ca499;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.game-button:hover {
+    background-color: #1ca499b2;
+}
