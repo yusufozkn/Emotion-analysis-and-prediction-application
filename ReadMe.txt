@@ -20,7 +20,7 @@
 
 -Gerekli kutuphaneler icin "requirements.txt" dosyasini kullanabilirsiniz.
 
--Projenin calistirilabilmesi icin gerekli modeli drive uzerinden => https://drive.google.com/drive/folders/1bXkQ8ZKv8STHvuuiXFWAAZl1wZFT1E3r?usp=sharing indiriniz.
+-Proje ici ngerekli model boyut siniri sebebi ile yuklenmemistir. Projenin calistirilabilmesi icin gerekli modeli drive uzerinden => https://drive.google.com/drive/folders/1bXkQ8ZKv8STHvuuiXFWAAZl1wZFT1E3r?usp=sharing indiriniz.
 
 ## Projenin Kurulumu ve Çalıştırılması
 -Proje, mevcut dosya dizininde konsola "python app.py" yazilarak calistirilir.  
